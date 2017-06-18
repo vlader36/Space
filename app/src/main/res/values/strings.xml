@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Space</string>
+    <string name="logo">Everything you want to know about the country</string>
+    <string name="start">Start working</string>
+    <string name="exit">Exit</string>
+    <string name="help">Help</string>
+    <string name="search">Search</string>
+    <string name="ok">Ok</string>
+    <string name="error">Oh no, error here</string>
+    <string name="showAll">Show all</string>
+    <string name="searchInRegions">Search region</string>
+    <string name="searchInCountries">Search country</string>
+    <string name="inProgress">Getting ansver from server, please wait</string>
+    <string name="helpContent1">The application is written using the api site of restcountries.eu.</string>
+    <string name="helpContent2">Here you can see information about countries by region, or find the country you need from among all existing in the database by the capital, name, or part of the name.</string>
+    <string name="greetings">You\'re welcome</string>
+    <string name="expo">Special for Exposit</string>
+</resources>

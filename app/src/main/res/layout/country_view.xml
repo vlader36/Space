@@ -1,0 +1,175 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6ECD5">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/headerCountry"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/ivFlagCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvNameCountry"
+                    android:textColor="#FFFFFF"
+                    android:layout_below="@id/ivFlagCountry"
+                    android:textSize="@dimen/logoSize"
+                    android:layout_centerHorizontal="true"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/tvRegionCountry"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNameCountry"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerCountry"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded">
+                <ImageView
+                    android:id="@+id/capital"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/city"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvCapital"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/capital"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/more"
+                    android:textColor="#000000"
+                    android:text="sample text"/>
+
+                <ImageView
+                    android:id="@+id/peoples"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/capital"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/peoples"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvPeoples"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/peoples"
+                    android:layout_below="@id/capital"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/more"
+                    android:textColor="#000000"
+                    android:text="sample text"/>
+
+                <ImageView
+                    android:id="@+id/area"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/peoples"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/area"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvArea"
+                    android:textSize="@dimen/more"
+                    android:layout_toRightOf="@id/peoples"
+                    android:layout_below="@id/peoples"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000000"
+                    android:text="sample text"/>
+
+                <ImageView
+                    android:id="@+id/language"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/area"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/language"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvLanguage"
+                    android:layout_toRightOf="@id/peoples"
+                    android:layout_below="@id/area"
+                    android:textSize="@dimen/more"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000000"
+                    android:text="sample text"/>
+
+                <ImageView
+                    android:id="@+id/money"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/language"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/money"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvMoney"
+                    android:layout_toRightOf="@id/peoples"
+                    android:layout_below="@id/language"
+                    android:layout_marginTop="14dp"
+                    android:textSize="@dimen/more"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000000"
+                    android:text="sample text"/>
+
+                <ImageView
+                    android:id="@+id/time"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/money"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/clock"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTime"
+                    android:layout_toRightOf="@id/peoples"
+                    android:textSize="@dimen/more"
+                    android:layout_below="@id/money"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000000"
+                    android:text="sample text"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
